@@ -8,8 +8,11 @@ number_two = 2
 number_five = 5
 
 print("****")
+print(type(number_one))
 print(number_one)
+print(type(number_two))
 print(number_two)
+print(type(number_five))
 print(number_five)
 print("****")
 
@@ -21,11 +24,13 @@ number_seven = number_four + number_three
 
 div_two = number_five / number_two
 print("5 / 2")
+print(type(div_two))
 print(div_two)
 print("****")
 
 div_two_integer = number_five // number_two
 print("5 // 2")
+print(type(div_two_integer))
 print(div_two_integer)
 
 print("****")
