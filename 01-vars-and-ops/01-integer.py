@@ -13,3 +13,11 @@ number_four = number_two + number_two
 number_ten = number_two * number_five
 number_eight = number_ten - number_five
 number_seven = number_four + number_three
+
+div_two = number_five / number_two
+print(div_two)
+
+div_two_integer = number_five // number_two
+print(div_two_integer)
+mod_three = number_seven % number_four
+print(mod_three)
