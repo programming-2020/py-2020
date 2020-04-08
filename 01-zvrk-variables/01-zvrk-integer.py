@@ -1,7 +1,7 @@
 # Example of integer numbers
 # + - *
 # / // %
-
+print("Start")
 number_one = 1
 number_two = 2
 number_five = 5
