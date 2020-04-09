@@ -12,3 +12,6 @@ d = z > x
 cd = c or d
 cd = not cd
 output = a or b and cd
+
+message = f'Output = {output}'
+print(message)
