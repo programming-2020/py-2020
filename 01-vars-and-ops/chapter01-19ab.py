@@ -15,6 +15,5 @@ output_b = (a or b) and not a
 # False and False -> False
 # True or False -> True
 
-
 message = f'Output a = {output_a}\nOutput b = {output_b}'
 print(message)
