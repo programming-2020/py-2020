@@ -5,5 +5,6 @@ y = int(input("y = "))
 
 output = (x + y) / ((x / y) + 3)
 
-print("output = ")
-print(output)
+# py 3.5 -> format string
+message = f'Output = {output}'
+print(message)
