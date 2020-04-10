@@ -13,5 +13,7 @@ output_a = first_interval or second_interval
 output_b = not (first_interval or second_interval)
 output_c = first_interval and second interval
 
+# output = not (( x >= number_two and x <= number_five ) or ( x >= number_minus_one and x <= number_one ))
+
 message = f'Output = {}'
 print(message)
