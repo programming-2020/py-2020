@@ -5,3 +5,10 @@
 # c) does the knight in a field A attaks field B
 
 
+xa = int(input('xa = '))
+ya = int(input('ya = '))
+
+xb = int(input('xb = '))
+yb = int(input('yb = '))
+
+
