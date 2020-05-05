@@ -12,6 +12,7 @@ def triangle_p(a, b, c):
         return (a + b + c) / two
     return zero
 
+
 def triangle_area(a, b, c):
     if triangle_p(a, b, c) != zero:
         p = triangle_p(a, b, c)
@@ -23,7 +24,6 @@ def triangle_message(area):
     if area == zero:
         return "Triangle cannot be constructed"
     return f'Area = {area}'
-
 
 
 a = int(input("a = "))
