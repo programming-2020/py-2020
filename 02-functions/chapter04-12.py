@@ -14,8 +14,8 @@ def product_b(n, m):
     signum = -one
     p = one
     m += 1
-    for i in range(n, m):
-        p *= (n + (signum ** m) * i * (m - one))
+    for i in range(one, m):
+        p *= n + (signum ** (i + one)) * i * m
     return p
          
 
