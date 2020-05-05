@@ -25,7 +25,7 @@ def product_for_b(n, m):
     p = one
     i = one
     for i in range(i, m + 1):
-        p *= n + ((-one) ** (i + 1)) * i ** 2
+        p *= (n + ((-one) ** (i + 1)) * i * m)
     return p
 
 
@@ -33,7 +33,7 @@ def product_while_b(n, m):
     p = one
     i = one
     while (i <= m):
-        p *= n + ((-one) ** (i + 1)) * i ** 2
+        p *= n + ((-one) ** (i + 1)) * i * m
         i += one
     return p
 
@@ -42,7 +42,7 @@ def product_for_c(n, m):
     p = one
     i = one
     for i in range(i, m + 1):
-        p *= ((-one) ** (i + 1)) / (n + i ** 2)
+        p *= ((-one) ** (i + 1)) / (n + i * m)
     return p
 
 
@@ -50,7 +50,7 @@ def product_while_c(n, m):
     p = one
     i = one
     while (i <= m):
-        p *= ((-one) ** (i + 1)) / (n + i ** 2)
+        p *= ((-one) ** (i + 1)) / (n + i * m)
         i += one
     return p
 
