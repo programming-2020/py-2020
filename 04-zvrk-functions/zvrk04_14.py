@@ -1,5 +1,6 @@
 zero = 0
 one = 1
+two = 2
 import math
 
 def sum_a(n):
@@ -37,7 +38,7 @@ def sum_c(n):
     for i in range(i, n + 1):
         sin += math.sin(i)
         cos += math.cos(i)
-        s *+ cos / sin
+        s *+ cos / sin # ovo nece da izracuna?
     return s
 
 
@@ -48,6 +49,19 @@ def sum_d(n):
     for i in range(i, n + 1):
         b = (-one) ** (i-1)
         s += b * math.factorial(3*i)
+    return s
+
+
+def sum_e(n):
+    s = zero
+    i = one
+    a = one
+    b = one
+    
+    for i in range(i, n + 1):
+        a = math.factorial(2 * i)
+        b = math.factorial(i - 1)
+        s += a / b
     return s
 
 
@@ -64,3 +78,6 @@ print(message_c)
 
 message_d = f'Sum_d is: {sum_d(n)}'
 print(message_d)
+
+message_e = f'Sum_e is: {sum_e(n)}'
+print(message_e)
