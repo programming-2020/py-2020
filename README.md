@@ -1,2 +1,1 @@
-# py-2020
-python3 learning project
+[![Run on Repl.it](https://repl.it/badge/github/programming-2020/py-2020)](https://repl.it/github/programming-2020/py-2020)
