@@ -27,7 +27,6 @@ class LeftClass(BaseClass):
         """
         super().__init__()
         LeftClass.instance += 1
-        print(f"BaseClass = {BaseClass.instance}")
         print(f"LeftClass = {LeftClass.instance}")
 
 
@@ -44,7 +43,6 @@ class RightClass(BaseClass):
         """
         super().__init__()
         RightClass.instance += 1
-        print(f"BaseClass = {BaseClass.instance}")
         print(f"RightClass = {RightClass.instance}")
 
 
