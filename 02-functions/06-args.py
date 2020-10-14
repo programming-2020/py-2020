@@ -8,6 +8,7 @@ A single asterisk (*) to unpack iterables.
 
 def firstFn(first_param, *args):
     print(f"First parameter: {first_param}")
+    print(args)
     for arg in args:
         print(f"arg in args: {arg}")
 
