@@ -18,6 +18,7 @@ class Contact:
     def _getName(self):
         return self.__fullname
 
+    # Order is important - first get, second set
     fullname = property(_getName, _setName)
 
 
