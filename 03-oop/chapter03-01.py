@@ -18,7 +18,7 @@ class Contact:
     def _getName(self):
         return self.__fullname
 
-    fullname = property(getName, setName)
+    fullname = property(_getName, _setName)
 
 
 a = Contact("ABCD", "abc@mail.com")
