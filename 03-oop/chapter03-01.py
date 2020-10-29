@@ -1,30 +1,41 @@
-
 '''
-Properties simple example
+Exception handling
+Exception is an object inherited fro mbuilt-in class BaseException
 '''
 
 
-class Contact:
-
-    def __init__(self, fullname, email):
-        self.__fullname = fullname
-        self.__email = email
-
-    def _setName(self, fullname):
-        if not fullname:
-            raise Exception("The name is invalid")
-        self.__fullname = fullname
-
-    def _getName(self):
-        return self.__fullname
-
-    # Order is important - first get, second set
-    fullname = property(_getName, _setName)
+def isEven(number):
+    if not isinstance(number, int):
+        raise TypeError(f"Number {number} is not an integer")
+    if number % 2:
+        raise ValueError(f"Number {number} is not even")
+    return f"Number {number} is an even number"
 
 
-a = Contact("ABCD", "abc@mail.com")
-print(a.fullname)
-a.fullname = "New One"
-print(a.fullname)
-a.fullname = ""
-print(a.fullname)
+# print(isEven(3))
+# print(isEven("3"))
+three = 3
+zero = 0
+
+
+def isDevisibleByThree(number):
+    try:
+        if number == zero:
+            raise ZeroDivisionError
+        if not isinstance(number, int):
+            raise TypeError
+        if number % three != zero:
+            raise ValueError
+        return f"Number can be devided by three"
+    except ZeroDivisionError:
+        return "Cannot devide by zero"
+    except TypeError:
+        return f"The inserted value must be an integer"
+    except ValueError:
+        return f"The value cannot be divided by three"
+
+
+print(isDevisibleByThree(9))
+print(isDevisibleByThree(0))
+print(isDevisibleByThree(8))
+print(isDevisibleByThree("33"))
