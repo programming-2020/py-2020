@@ -27,3 +27,4 @@ print(a.fullname)
 a.fullname = "New One"
 print(a.fullname)
 a.fullname = ""
+print(a.fullname)
