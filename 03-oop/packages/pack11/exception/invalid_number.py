@@ -26,3 +26,7 @@ class InvalidNumberException (Exception):
             return f"Invalid input type. Input must be an integer"
         except NegativeNumberError:
             return f"Input must be a positive integer"
+
+
+def text():
+    return "Text"

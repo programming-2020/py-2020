@@ -1,6 +1,8 @@
 '''
 '''
-from exception.invalid_number import InvalidNumberException
+from exception.invalid_number import InvalidNumberException, text
+
+print(text())
 
 
 class NegativeNumberError (Exception):
@@ -18,16 +20,24 @@ class PositiveNumber:
     __zero = 0
 
     def __init__(self, number):
-        try:
-            if not isinstance(number, int):
-                raise TypeError("Invalid input type. Input must be an integer")
-            if number <= self.__zero:
-                raise Exception("Input must be a positive integer")
-            self.__number = number
+        """
+        docstring
+        """
+        self.__number = number
+    # def __init__(self, number):
+    #     try:
+    #         if not isinstance(number, int):
+    #             raise TypeError("Invalid input type. Input must be an integer")
+    #         if number <= self.__zero:
+    #             raise Exception("Input must be a positive integer")
+    #         else:
+    #             self.__number = number
 
-    # def getNumber(self):
-    #    return self.__number
-
+    def getName(self):
+        """
+        docstring
+        """
+        return self.__number
 
 # n = PositiveNumber("sadf")
 # print(n.getNumber())
