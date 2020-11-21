@@ -10,16 +10,16 @@ class Contact:
         self.__fullname = fullname
         self.__email = email
 
-    def _setName(self, fullname):
+    def __setName(self, fullname):
         if not fullname:
             raise Exception("The name is invalid")
         self.__fullname = fullname
 
-    def _getName(self):
+    def __getName(self):
         return self.__fullname
 
     # Order is important - first get, second set
-    fullname = property(_getName, _setName)
+    fullname = property(__getName, __setName)
 
 
 a = Contact("ABCD", "abc@mail.com")
