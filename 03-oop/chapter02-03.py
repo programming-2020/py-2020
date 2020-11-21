@@ -15,11 +15,11 @@ class Rectangle:
 
     def area(self):
         '''Area of the rectangle '''
-        return length * width
+        return self.length * self.width
 
     def perimeter(self):
         '''Perimeter of the rectangle'''
-        return 2 * (length + width)
+        return 2 * (self.length + self.width)
 
     def rectangleStr(self):
         '''String values of the rectangle'''
