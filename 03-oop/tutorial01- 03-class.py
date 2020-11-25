@@ -22,3 +22,8 @@ class Point():
 
 a = Point("A", 4, 5)
 print(a.show())
+
+b = Point("B", 4, 5)
+print(b.show())
+
+# print(a == b) # False
